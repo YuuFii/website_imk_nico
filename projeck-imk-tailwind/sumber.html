@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumber Belajar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&family=Poppins:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        mainBlue: '#4076FF',
+                        secondaryGray: '#71839B',
+                        lightGray: '#f9f9f9',
+                        secondLightGray: '#c1c1c1',
+                    }, 
+                    fontFamily: {
+                        poppins: ['Poppins']
+                    },
+                    
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="flex flex-wrap justify-between items-center py-4 px-6 bg-white">
+        <img src="assets/gambar/logo-biru.svg" alt="">
+        <div class="menu-icon text-2xl md:hidden" aria-expanded="false">
+            <i class="ph ph-list"></i>
+        </div>
+        <ul id="nav-list" class="hidden md:flex space-x-4 space-y-4 md:space-y-0 text-center font-semibold text-secondaryGray md:text-start order-1 md:order-none">
+            <li class="">
+                <a href="#" class="hover:border-b-black-4 group-hover:text-gray-300">Home</a>
+            </li>
+            <li class="menu-list">
+                <a href="#">Explore</a>
+            </li>
+            <li class="menu-list">
+                <a href="#">Our Services</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" id="forum-dropdown" class="flex items-center justify-center" aria-expanded="false">
+                    Forum
+                    <i class="ph ph-caret-down ml-2"></i>
+                    <i class="ph ph-caret-up ml-2 hidden"></i>
+                </a>
+                <div class="dropdown-content flex-col hidden pt-3 md:pt-0">
+                    <a href="#" class="text-black md:py-3 md:px-4">Diskusi</a>
+                    <a href="#" class="text-black md:py-3 md:px-4">Chat Pribadi</a>
+                </div>
+            </li>
+        </ul>
+        <ul id="nav-list-2" class="hidden md:flex md:flex-row md:items-center my-3 space-x-4">
+            <li>
+                <a href="#"><img src="assets/gambar/u_bell.svg" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="assets/gambar/u_setting (1).svg" alt=""></a>
+            </li>
+            <li>
+                <a href="profil.html"><img src="assets/gambar/Display Picture.svg" alt=""></a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Content -->
+    <main>
+        <!-- Tips Persiapan Bekerja -->
+        <div class="flex justify-between items-center px-10 py-2">
+            <h2 class="font-bold text-lg sm:text-xl lg:text-3xl text-mainBlue">Tips Persiapan Bekerja</h2>
+            <a href="#" class="tombol-telusuri text-sm lg:text-base">Telusuri semua</a>
+        </div>
+        <section class="flex md:flex-col lg:flex-row overflow-x-auto md:overflow-x-visible mx-10 mb-10 gap-5 lg:gap-10">
+            <div class="min-w-44 bg-mainBlue text-white rounded-lg overflow-hidden">
+                <a href="#" class="md:flex lg:flex-col">
+                    <img src="assets/gambar/sample-img.svg" alt="">
+                    <div>
+                        <h4 class="font-semibold px-4 py-2">Judul Video 1</h4>
+                        <hr class="w-4/5 mx-4">
+                        <p class="px-4 pb-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, magni.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="min-w-44 bg-mainBlue text-white rounded-lg overflow-hidden">
+                <a href="#" class="md:flex lg:flex-col">
+                    <img src="assets/gambar/sample-img.svg" alt="">
+                    <div>
+                        <h4 class="font-semibold px-4 py-2">Judul Video 2</h4>
+                        <hr class="w-4/5 mx-4">
+                        <p class="px-4 pb-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, magni.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="min-w-44 bg-mainBlue text-white rounded-lg overflow-hidden">
+                <a href="#" class="md:flex lg:flex-col">
+                    <img src="assets/gambar/sample-img.svg" alt="">
+                    <div>
+                        <h4 class="font-semibold px-4 py-2">Judul Video 3</h4>
+                        <hr class="w-4/5 mx-4">
+                        <p class="px-4 pb-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, magni.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- Tips Persiapan Bekerja End -->
+
+        <!-- Video Informatif -->
+        <div class="flex justify-between items-center px-10 py-2">
+            <h2 class="font-bold text-lg sm:text-xl lg:text-3xl text-mainBlue">Video Informatif</h2>
+            <a href="#" class="tombol-telusuri text-sm lg:text-base">Telusuri semua</a>
+        </div>
+        <section class="flex md:flex-col lg:flex-row overflow-x-auto md:overflow-x-visible mx-10 mb-10 gap-5 lg:gap-10">
+            <div class="min-w-44 bg-mainBlue text-white rounded-lg overflow-hidden">
+                <a href="#" class="md:flex lg:flex-col">
+                    <img src="assets/gambar/sample-img.svg" alt="">
+                    <div>
+                        <h4 class="font-semibold px-4 py-2">Judul Video 1</h4>
+                        <hr class="w-4/5 mx-4">
+                        <p class="px-4 pb-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, magni.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="min-w-44 bg-mainBlue text-white rounded-lg overflow-hidden">
+                <a href="#" class="md:flex lg:flex-col">
+                    <img src="assets/gambar/sample-img.svg" alt="">
+                    <div>
+                        <h4 class="font-semibold px-4 py-2">Judul Video 2</h4>
+                        <hr class="w-4/5 mx-4">
+                        <p class="px-4 pb-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, magni.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="min-w-44 bg-mainBlue text-white rounded-lg overflow-hidden">
+                <a href="#" class="md:flex lg:flex-col">
+                    <img src="assets/gambar/sample-img.svg" alt="">
+                    <div>
+                        <h4 class="font-semibold px-4 py-2">Judul Video 3</h4>
+                        <hr class="w-4/5 mx-4">
+                        <p class="px-4 pb-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, magni.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- Video Informatif End -->
+
+        <!-- Koleksi Buku -->
+        <div class="flex justify-between items-center px-10 py-2">
+            <h2 class="font-bold text-lg sm:text-xl lg:text-3xl text-mainBlue">Koleksi Buku</h2>
+            <a href="#" class="tombol-telusuri text-sm lg:text-base">Telusuri semua</a>
+        </div>
+        <section class="flex md:flex-col lg:flex-row overflow-x-auto md:overflow-x-visible mx-10 mb-10 gap-5 lg:gap-10">
+            <div class="min-w-44 bg-mainBlue text-white rounded-lg overflow-hidden">
+                <a href="#" class="md:flex lg:flex-col">
+                    <img src="assets/gambar/sample-img.svg" alt="">
+                    <div>
+                        <h4 class="font-semibold px-4 py-2">Judul Video 1</h4>
+                        <hr class="w-4/5 mx-4">
+                        <p class="px-4 pb-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, magni.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="min-w-44 bg-mainBlue text-white rounded-lg overflow-hidden">
+                <a href="#" class="md:flex lg:flex-col">
+                    <img src="assets/gambar/sample-img.svg" alt="">
+                    <div>
+                        <h4 class="font-semibold px-4 py-2">Judul Video 2</h4>
+                        <hr class="w-4/5 mx-4">
+                        <p class="px-4 pb-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, magni.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="min-w-44 bg-mainBlue text-white rounded-lg overflow-hidden">
+                <a href="#" class="md:flex lg:flex-col">
+                    <img src="assets/gambar/sample-img.svg" alt="">
+                    <div>
+                        <h4 class="font-semibold px-4 py-2">Judul Video 3</h4>
+                        <hr class="w-4/5 mx-4">
+                        <p class="px-4 pb-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, magni.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- Koleksi Buku End -->
+    </main>
+    <!-- Content End -->
+
+    <!-- Footer -->
+    <footer class="bg-mainBlue text-white">
+        <div class="flex flex-col lg:flex-row justify-evenly space-y-5 py-20 px-10">
+            <img src="assets/gambar/Logo LIFT.svg" alt=""  class="self-center mb-14">
+            <div>
+                <h2 class="font-bold">Learn More</h2>
+                <ul class="space-y-3 my-3">
+                    <li><a href="tentang.html" class="hover:underline">About Us</a></li>
+                    <li><a href="#" class="hover:underline">Eksplorasi Karir</a></li>
+                    <li><a href="#" class="hover:underline">Sumber Belajar</a></li>
+                    <li><a href="#" class="hover:underline">Tes Minat & Bakat</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="font-bold">Contact Us</h2>
+                <ul class="space-y-3 my-3">
+                    <li>Perusahaan: <span class="font-bold">123-456-7890</span></li>
+                    <li>Layanan Bantuan: <span class="font-bold">123-456-7890</span></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="font-bold">Social</h2>
+                <ul class="space-y-3 my-3">
+                    <li><a href="#"><img src="assets/gambar/instagram-logo.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/gambar/Path.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/gambar/bxl-facebook.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/gambar/youtube-logo.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="w-10/12 mx-auto">
+        <p class="text-center pt-6 pb-16">&copy; 2019 Lift Media - All Rights Reserved</p>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Script -->
+    <!-- Script Navbar -->
+    <script>
+        const menuIcon = document.querySelector(".menu-icon");
+        const menuList = document.getElementById("nav-list");
+        const menuList2 = document.getElementById("nav-list-2");
+        const contentList = document.getElementsByClassName('menu-list');
+        const forumDropdown = document.getElementById('forum-dropdown');
+        const caretDown = forumDropdown.querySelector('.ph-caret-down');
+        const caretUp = forumDropdown.querySelector('.ph-caret-up');
+        // const forumDropdownContent = document.getElementsByClassName('dropdown-content');
+
+        menuIcon.addEventListener("click", () => {
+            const expanded = menuIcon.getAttribute('aria-expanded') === 'true' || false;
+            menuIcon.setAttribute('aria-expanded', !expanded);
+            menuList.classList.toggle("hidden");
+            menuList2.classList.toggle("hidden");
+
+            if (!expanded) {
+                menuList.classList.add('flex', 'flex-col', 'w-full', 'items-center');
+                menuList.classList.remove('space-x-4');
+                menuList2.classList.add('flex', 'w-full', 'justify-end', 'items-center', 'space-x-3');
+                menuList2.classList.remove('space-x-4');
+            } else {
+                menuList.classList.remove('flex', 'flex-col', 'w-full');
+                menuList.classList.add('space-x-4');
+                menuList2.classList.remove('flex', 'w-full', 'justify-end', 'items-center', 'space-x-3');
+                menuList2.classList.add('space-x-4');
+
+            }
+        });
+
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        forumDropdown.addEventListener('click', () => {
+            const expanded = forumDropdown.getAttribute('aria-expanded') === 'true' || false;
+
+            if (!expanded) {
+                forumDropdown.setAttribute('aria-expanded', 'true');
+                dropdownContent.classList.remove('hidden');
+                dropdownContent.style.display = 'flex';
+                dropdownContent.style.flexDirection = 'column';
+                caretDown.classList.add('hidden');
+                caretUp.classList.remove('hidden');
+            } else {
+                forumDropdown.setAttribute('aria-expanded', 'false');
+                dropdownContent.classList.add('hidden');
+                dropdownContent.style.display = 'none';
+                caretDown.classList.remove('hidden');
+                caretUp.classList.add('hidden');
+            }
+        });
+    </script>
+    <!-- Script Navbar End -->
+</body>
+</html>
